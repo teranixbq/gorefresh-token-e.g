@@ -1,0 +1,111 @@
+{
+    "info": {
+        "_postman_id": "3a92d2c2-e3e3-4dfe-874a-f64d176bae19",
+        "name": "refresh",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:8080/register",
+                    "path": [
+                        "register"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"username\":\"user\",\n  \"password\":\"123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:8080/login",
+                    "path": [
+                        "login"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"username\":\"user\",\n  \"password\":\"123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "profile",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:8080/profile",
+                    "path": [
+                        "profile"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk0OTg4MDcsImlkIjoiOGE2MzFkYjgtYzcyZS00Y2MxLTg2ZWYtMjczZjRkMzNiZThjIn0.rAQ1WfIGD8JfUcZSxob_7GwyX3Y_95l13wVg61BlZLA",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "refresh",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:8080/refresh",
+                    "path": [
+                        "refresh"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"refresh_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk1MDIwNjQsImlkIjoiYjE5NDg2MWMtMmE2OS00YmJkLTk4MDgtMjZlNThjYWM4M2QwIn0.RjiPQt1FydI-h_wOq6tubStdJVDco_FhiMqr6R0DErY\"\n}"
+                }
+            }
+        }
+    ]
+}
