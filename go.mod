@@ -31,7 +31,7 @@ require (
 )
 
 require (
-	github.com/gofiber/fiber/v2 v2.52.2
+	github.com/gofiber/fiber/v2 v2.52.5
 	github.com/golang-jwt/jwt/v5 v5.2.0
 	golang.org/x/sys v0.15.0 // indirect
 	gorm.io/driver/postgres v1.5.6
